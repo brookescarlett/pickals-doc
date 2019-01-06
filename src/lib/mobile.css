@@ -1,0 +1,59 @@
+@media only screen and (max-width: 400px) {
+  
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .mobile-display-nav {
+        background-color: rgb(215, 215, 215);
+        z-index: 300;
+    }
+
+    .mobile-item {
+        font-size: 20px;
+        color: var(--main-bg-green);
+    }
+
+    a { 
+        color: var(--main-bg-green);        
+    }
+
+    a:visited {
+        color: var(--main-bg-green);        
+    }
+
+    .trailer {
+        margin-top: 5%;
+    }
+
+    .donate-grid {
+        display: grid;
+        /* grid-template-rows: repeat(10, 1fr); */
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        height: 100%;
+    }
+
+    .grid-item { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        overflow: scroll;  
+        grid-column: span 1; 
+
+    }
+
+    .fifth {
+        grid-row: span 7;
+    }
+
+    .social-icons {
+        border-radius: 200px;
+        border: 1px solid var(--main-bg-green)
+    }
+}

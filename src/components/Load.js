@@ -22,7 +22,7 @@ import Home from './Home'
 
 export default class Fade extends Component {
 
-    state = { in: false, home: false }
+    state = { in: window.innerWidth > 400 ? false : true, home: false }
 
     toggleEnterState = () => {
         this.setState({ in: true })
@@ -64,7 +64,10 @@ export default class Fade extends Component {
                             ...defaultStyle,
                             ...transitionStyles[state]
                         }}>
-                            <div className="fixed top-0 left-0 right-0 bottom-0 loader"></div>
+                            <div 
+                                className="fixed top-0 left-0 right-0 bottom-0 loader"
+                                onClick={this.toggleEnterState}>
+                            </div>
                         </div>
                     )}
                 </Transition>

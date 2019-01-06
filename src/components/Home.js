@@ -14,7 +14,7 @@ export default class Home extends Component {
                         title="Pickleman"
                         width={(window.innerWidth / 8)*5}
                         height="100%"
-                        className="py4"
+                        className="py4 trailer"
                         webkitallowfullscreen 
                         mozallowfullscreen 
                         allowfullscreen>

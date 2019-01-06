@@ -1,47 +1,6 @@
 @import './lib/colors.css';
 @import './lib/fonts.css';
+@import './lib/docstyles.css';
 @import './lib/nav.css';
 @import './lib/grid.css';
-
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Pitch Sans Regular", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--main-bg-green);
-  color: white;
-}
-
-
-
-.h1 {
-  color: white;
-  font-family: "Pitch Sans Bold"
-}
-
-.description {
-  font-family: "Pitch Sans Light"
-}
-
-
-
-.footer {
-  background-color: white;
-  color: var(--main-bg-green);
-  width: 100%;
-}
-
-
-.loader {
-  background-image: url('https://media.giphy.com/media/2fI5YK87t7qyYxvvwO/giphy.gif');
-  background-position: center;
-  background-size: cover;
-  min-width: 100vw; 
-  min-height: 100vh;
-  position: fixed;
-  z-index: 300;
-  transition: all 2s ease-in-out;
-}
+@import './lib/mobile.css';
