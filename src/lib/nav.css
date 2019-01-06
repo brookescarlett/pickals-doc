@@ -1,0 +1,9 @@
+.nav a {
+  color: var(--nav-links-grey);
+  font-size: 1.2em;
+  font-family: "Pitch Sans Medium"
+}
+
+.nav a:hover {
+  color: white;
+}

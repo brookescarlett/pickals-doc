@@ -1,0 +1,75 @@
+.parent-container{
+  height: 1200px;
+}
+
+.donate-grid{
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  height: 100%;
+}
+
+.grid-item { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  overflow: scroll;
+}
+
+.text {
+  background-color: rgb(215,228,198);
+  color: var(--main-bg-green);
+}
+
+.action-link {
+  color: var(--main-bg-green);
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header { 
+  grid-row: span 3;
+  grid-column: span 5; 
+  background-image: url('../assets/images/cuketoacure-animation.jpg');
+  opacity: 1;
+}
+
+.first {
+  grid-row: span 2;
+  grid-column: span 2; 
+}
+
+.second {
+  grid-row: span 3;
+  grid-column: span 3;
+  background-image: url('../assets/images/toothbrush3.jpg');
+
+}
+
+.third {
+  grid-row: span 3;
+  grid-column: span 2;
+  background-image: url('../assets/images/mask.jpg');
+}
+
+.fourth {
+  grid-row: span 1;
+  grid-column: span 3;
+}
+
+.fifth {
+  grid-row: span 3;
+  grid-column: span 3;
+  background-image: url('../assets/images/food.still.jpg');
+}
+
+.sixth { 
+  grid-row: span 2;
+  grid-column: span 2;
+}
