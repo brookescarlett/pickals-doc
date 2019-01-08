@@ -30,7 +30,7 @@ class App extends Component {
         <Router>
           <div>
             <nav className="desktop-nav nav">
-              <ul className="list-reset flex justify-between px3">
+              {/* <ul className="list-reset flex justify-between items-center px3">
 
                 <div>
                   <li className="p2">
@@ -39,7 +39,7 @@ class App extends Component {
                           <img 
                             src={Title} 
                             alt="logo-png" 
-                            width="160"
+                            width="200"
                             />
                     </Link>
                   </li>
@@ -59,6 +59,31 @@ class App extends Component {
                           className="text-decoration-none">Contact</Link>
                   </li>
                 </div>
+              </ul> */}
+
+              <ul className="list-reset flex justify-center items-center px3 mr2">
+                  <li className="p2">
+                    <Link to="/about/"
+                      className="caps text-decoration-none">The Documentary Short</Link>
+                  </li>
+                  <li className="p2">
+                    <Link to="/"
+                      className="text-decoration-none">
+                      <img
+                        src={Title}
+                        alt="logo-png"
+                        width="240"
+                      />
+                    </Link>
+                  </li>
+                  <li className="p2">
+                    <Link to="/donate/"
+                      className="caps text-decoration-none">Donate</Link>
+                  </li>
+                  <li className="p2">
+                    <Link to="/contact/"
+                      className="caps text-decoration-none">Contact</Link>
+                  </li>
               </ul>
             </nav>
 
@@ -76,7 +101,7 @@ class App extends Component {
 
             {this.state.show ? <MobileNav handleClick={this.handleClick} /> : null}
 
-            <Route exact path="/" component={Load} />
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={Home} />
             <Route path="/donate/" component={Donate} />
             <Route path="/contact/" component={Contact} />
