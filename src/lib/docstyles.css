@@ -19,9 +19,11 @@ body {
 }
 
 .trailer {
-  /* width: 800px; */
   height: 70vh;
-  /* margin: 0px; */
+}
+
+a {
+  color: white;
 }
 
 .description {
