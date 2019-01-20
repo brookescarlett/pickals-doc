@@ -16,7 +16,15 @@ class App extends Component {
 
   constructor(){
     super()
-    this.state = { show: false }
+    this.state = { show: false, mobile: window.innerWidth <= 60 ? true : false }
+  }
+
+  componentDidMount = () => { 
+    window.addEventListener('resize', (e) => {
+      if (window.innerWidth <= 660) {
+        this.setState({ mobile: true })
+      }
+    })
   }
 
   handleClick = () => {
@@ -101,7 +109,7 @@ class App extends Component {
 
             {this.state.show ? <MobileNav handleClick={this.handleClick} /> : null}
 
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Load} />
             <Route path="/about" component={Home} />
             <Route path="/donate/" component={Donate} />
             <Route path="/contact/" component={Contact} />

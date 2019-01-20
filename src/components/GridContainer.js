@@ -46,13 +46,13 @@ export default class GridContainer extends Component {
     render(){
         return(
             <div className={this.props.className} ref={this.myRef}>
-                {this.props.text ? 
-                    <p className="mx2 center">{ this.props.text }<a href={this.props.actionUrl} target="_blank" rel="noopener noreferrer" className="action-link">{ this.props.action }</a></p> 
-                : null }
                 {this.props.img ? 
-                    <img src={ this.props.imgUrl } alt="home" width="50%"/>
-
-                : null}
+                    <img src={ this.props.imgUrl } alt="home" width={window.innerWidth <= 660 ? "100%" : "50%"}/>
+                    
+                    : null}
+                    {this.props.text ? 
+                        <p className="mx2 center">{ this.props.text }<a href={this.props.actionUrl} target="_blank" rel="noopener noreferrer" className="action-link">{ this.props.action }</a></p> 
+                    : null }
             </div>
         )
     }

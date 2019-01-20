@@ -32,9 +32,9 @@ export default class Donate extends Component {
                         className="grid-item image fifth"/>
                     <GridContainer 
                         className="grid-item text sixth"
-                        text={"AThere is no cure and the only approved treatment extends survival by 2-3 months. Patients typically die within 2-5 years of diagnosis. "}
-                        action={"Buy Pickals →"}
-                        actionUrl={"https://pickals.org/"}
+                        text={"There is no cure and the only approved treatment extends survival by 2-3 months. Patients typically die within 2-5 years of diagnosis. "}
+                        action={"More Facts →"}
+                        actionUrl={"https://pickals.org/about-als/"}
                         />
 
                     {/* <div className="grid-item image header"></div>

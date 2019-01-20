@@ -30,6 +30,10 @@ a {
   font-family: "Pitch Sans Light"
 }
 
+.display-line-break {
+  white-space: pre-line;
+}
+
 .mobile-nav {
     display: none;
 }
@@ -42,7 +46,7 @@ a {
 
 
 .loader {
-  background-image: url('https://media.giphy.com/media/2fI5YK87t7qyYxvvwO/giphy.gif');
+  background-image: url('../assets/images/clip_for_site.gif');
   background-position: center;
   background-size: cover;
   min-width: 100vw; 
@@ -50,4 +54,26 @@ a {
   position: fixed;
   z-index: 300;
   transition: all 2s ease-in-out;
+}
+
+
+.buttonStyle {
+  opacity: 0;
+  animation: fadein 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  text-decoration: underline;
+  background-color: transparent;
+  font-family: 'Pitch Sans Bold';
+  padding: 30px 30px;
+  font-size: 1.5em;
+  border: 1px solid white;
+  cursor: pointer;
+  /* border-radius: 200px; */
+  color: white;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

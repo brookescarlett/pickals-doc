@@ -21,15 +21,15 @@ export default class MobileNav extends Component {
                     <div className="flex flex-column mt3 pt3 ml2">
                         <li className="mobile-item p2 mt2">
                             <a href="/about/"
-                                className="text-decoration-none">The Documentary Short</a>
+                                className="dark-green text-decoration-none">The Documentary Short</a>
                         </li>
                         <li className="mobile-item p2">
                             <a href="/donate/"
-                                className="text-decoration-none">Donate</a>
+                                className="dark-green text-decoration-none">Donate</a>
                         </li>
                         <li className="mobile-item p2">
                             <a href="/contact/"
-                                className="text-decoration-none">Contact</a>
+                                className="dark-green text-decoration-none">Contact</a>
                         </li>
                     </div>
                 </ul>
