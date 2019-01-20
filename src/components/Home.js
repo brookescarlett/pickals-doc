@@ -9,7 +9,7 @@ export default class Home extends Component {
         console.log((window.innerWidth/8)*6)
         return(
             <Fragment>
-                <div className="main mx4 my3 flex flex-column items-center justify-center" id="home">
+                <div className="main mx4 mb3 mt4 flex flex-column items-center justify-center" id="home">
                     <iframe 
                         src="https://player.vimeo.com/video/305990922"
                         frameborder="0" 

@@ -30,6 +30,22 @@ a {
   font-family: "Pitch Sans Light"
 }
 
+.image-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.image-container > div {
+  height: 400px;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.contact-pics {
+  height: 400px;
+}
+
 .display-line-break {
   white-space: pre-line;
 }

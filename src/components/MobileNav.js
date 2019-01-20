@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import Close from '../assets/images/closed.svg'
 import Facebook from '../assets/images/facebook.svg'
 import Instagram from '../assets/images/instagram.svg'
-import Twitter from '../assets/images/twitter.svg'
-
-
 
 export default class MobileNav extends Component {
 
@@ -34,21 +31,21 @@ export default class MobileNav extends Component {
                     </div>
                 </ul>
                 <div className="flex items-center my1 ml2 mt3">
+                    <a href="https://www.facebook.com/pickals" target="_blank" rel="noopener noreferrer">
                     <img 
                         src={Facebook} 
                         alt="facebook-icon" 
                         className="social-icons mx2"
                         width="30" />
+                    </a>
+                    
+                    <a href="https://www.instagram.com/pick.als/" target="_blank" rel="noopener noreferrer">
                     <img 
                         src={Instagram} 
                         alt="insta-icon" 
                         className="social-icons mx2"
                         width="30" />
-                    <img 
-                        src={Twitter} 
-                        alt="twitter-icon" 
-                        className="social-icons mx2"
-                        width="30" />
+                    </a>
 
                 </div>
             </div>
